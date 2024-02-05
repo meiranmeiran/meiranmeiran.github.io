@@ -10,3 +10,5 @@ main:
      url: /people/
    - title: "Join"
      url: /join/
+   - title: "Album"
+     url: /album/
