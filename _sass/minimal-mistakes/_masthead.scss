@@ -10,6 +10,8 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
+  padding-left: 2em;
+  padding-right: 2em;
 
   &__inner-wrap {
     @include clearfix;
