@@ -11,7 +11,7 @@
   animation-delay: 0.15s;
   z-index: 20;
   padding-left: 2em;
-  padding-right: 2em;
+  padding-right: 1em;
 
   &__inner-wrap {
     @include clearfix;
