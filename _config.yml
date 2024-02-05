@@ -24,7 +24,7 @@ description              : "Environmental Microbiology Research Group @ CEE, UIU
 url                      : "https://meiranmeiran.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/HomersLake.jpg"
+teaser                   :
 logo                     : "/assets/images/logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -124,7 +124,7 @@ author:
 footer:
   links:
     - label: "Email"
-      icon: "fa fa-envelope"
+      icon: "fas fa-envelope"
       url: "mailto:mrzhsy@gmail.com"
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
