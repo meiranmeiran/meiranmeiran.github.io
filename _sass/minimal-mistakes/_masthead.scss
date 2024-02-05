@@ -15,7 +15,7 @@
     @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+    padding: 0.5em;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40,7 +40,7 @@
 }
 
 .site-logo img {
-  max-height: 4rem;
+  max-height: 5rem;
 }
 
 .site-title {
@@ -49,13 +49,16 @@
   display: flex;
   -ms-flex-item-align: center;
   align-self: center;
+  color: #454545;
   font-weight: bold;
+  font-size: $type-size-4;
   // z-index: 20;
 }
 
 .site-subtitle {
   display: block;
-  font-size: $type-size-8;
+  font-size: $type-size-6;
+  color: #454545;
 }
 
 .masthead__menu {
