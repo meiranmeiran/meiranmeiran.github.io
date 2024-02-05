@@ -2,13 +2,19 @@
 main:
    - title: "Home"
      url: https://meiranmeiran.github.io/
+     description: "Welcome!"
    - title: "Research"
      url: /research/
+     description: "What we are doing"
    - title: "Publications"
      url: /publications/
+     description: "Read our work"
    - title: "People"
      url: /people/
+     description: "Learn about people in our group and working with us"
    - title: "Join"
      url: /join/
+     description: "Check out the opportunities"
    - title: "Album"
      url: /album/
+     description: "Life is beyond research, and is beautiful"
