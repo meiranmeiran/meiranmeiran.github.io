@@ -12,8 +12,8 @@ main:
    - title: "People"
      url: /people/
      description: "Learn about people in our group and working with us"
-   - title: "Join"
-     url: /join/
+   - title: "Opportunities"
+     url: /opportunities/
      description: "Check out the opportunities"
    - title: "Album"
      url: /album/

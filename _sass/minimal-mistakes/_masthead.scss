@@ -10,7 +10,7 @@
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
   z-index: 20;
-  padding-left: 2em;
+  padding-left: 1em;
   padding-right: 1em;
 
   &__inner-wrap {
@@ -42,7 +42,7 @@
 }
 
 .site-logo img {
-  max-height: 5rem;
+  max-height: 4rem;
 }
 
 .site-title {
@@ -87,6 +87,7 @@
     font-weight: bold;
     color: #454545;
   }
+
 }
 
 .masthead__menu-item {
