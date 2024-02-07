@@ -12,6 +12,7 @@
   z-index: 20;
   padding-left: 1em;
   padding-right: 1em;
+  background-color: #e5fcdc;
 
   &__inner-wrap {
     @include clearfix;
@@ -27,12 +28,14 @@
     justify-content: space-between;
     font-family: $sans-serif-narrow;
 
+
     @include breakpoint($x-large) {
       max-width: $max-width;
     }
 
     nav {
       z-index: 10;
+      background-color: #e5fcdc;
     }
 
     a {
@@ -69,6 +72,7 @@
   margin-right: 0;
   width: 100%;
   clear: both;
+
 
   .site-nav {
     margin-left: 0;
