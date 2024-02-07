@@ -188,7 +188,10 @@ body {
   &--overlay {
     position: relative;
     margin-bottom: 2em;
-    padding: 3em 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,7 +200,7 @@ body {
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
-    text-align: center;
+    text-align: left;
 
     a {
       color: #fff;
@@ -217,12 +220,12 @@ body {
     .page__lead,
     .btn {
       color: #fff;
-      text-shadow: 1px 1px 4px rgba(#000, 0.5);
-      font-size: $type-size-2;
+      text-shadow: 2px 2px 6px rgba(#000000, 1);
+      font-size: $type-size-3;
     }
 
     .page__lead {
-      max-width: $medium;
+      max-width: $x-large;
     }
 
     .page__title {
