@@ -1,7 +1,7 @@
 # main links
 main:
    - title: "Home"
-     url: https://meiranmeiran.github.io/
+     url: /index/
      description: "Welcome!"
    - title: "Research"
      url: /research/
