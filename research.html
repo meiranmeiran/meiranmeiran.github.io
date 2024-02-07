@@ -9,20 +9,42 @@ author_profile: false
 <style>
   div.polaroid {
       width: auto;
-      max-width: 800px;
+      max-width: 600px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       text-align: center;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 24px;
+      display: flex; /* Establish flex container */
+      justify-content: center; /* Center children horizontally */
+      align-items: center; /* Center children vertically if you also want vertical centering */
+    }
+    div.container {
+      padding: 2px;
     }
 
-  div.container {
-      padding: 10px;
-    }
-
+    .polaroid img {
+  width: 80%; /* Adjust this to your desired width */
+  /* If you want to vertically center the image and it's not working,
+     make sure there's no conflicting height or padding properties */
 }
+
+@media screen and (max-width: 600px) {
+  .w3-col.w3-center.w3-hide-large .polaroid {
+    /* No need to adjust padding here unless you want to change the current padding */
+     padding: 0;
+  }
+
+  .w3-col.w3-center.w3-hide-large .polaroid img {
+    width: 80%; /* Or any other percentage you prefer */
+    padding: 0;
+  }
+}
+
 </style>
+
+
+
 
 <body>
 
@@ -38,13 +60,37 @@ author_profile: false
 <div class="w3-col l3 w3-center w3-hide-small w3-hide-medium">
   <img src="/assets/images/logo.png" alt="logo" style="width:100%">
 </div>
-<div class="w3-col l3 w3-center w3-hide-large">
+<div class="w3-col w3-center w3-hide-large w3-hide-small">
+  <img src="/assets/images/logo.png" alt="logo" style="width:35%">
+</div>
+<div class="w3-col w3-center w3-hide-large w3-hide-medium">
   <img src="/assets/images/logo.png" alt="logo" style="width:50%">
 </div>
 <div class="w3-clear"></div>
 
 <!-- Theme 1 -->
 <h2 style="margin-top:1em"><b>Research Theme 1. Microbial Evolution in Engineered Ecosystems</b></h2>
+<!-- Text -->
+<div class="w3-col l7">
+  <p style="margin-bottom: 0.5em;" align="justify">In the last centry, the synthesis of over 80,000 new chemicals has transformed human life but also brought significant health and environmental risks. Many of these man-made pollutants are completely new to the microbes we employ in wastewater treatment, challenging existing processes. However, wastewater treatment environments may also drive microbial evolution, fostering new metabolic capabilities to break down anthropogenic pollutants. We aspire to leverage advanced evolutionary analyses and well-controlled microbiology experiments, to discover new microbial genes and species that could be used to develop new remediation strategies.</p>
+  <div></div>
+</div>
+<div class="w3-col l1 w3-container"></div>
+<!-- Photo -->
+<div class="w3-col l3 w3-center w3-hide-small w3-hide-medium">
+  <div class="polaroid">
+    <img src="/assets/images/evolution.png" style="width:100%">
+  </div>
+</div>
+<div class="w3-col w3-center w3-hide-large">
+  <div class="polaroid">
+    <img src="/assets/images/evolution.png" style="width:80%">
+  </div>
+</div>
+<div class="w3-clear"></div>
+
+<!-- Theme 2 -->
+<h2 style="margin-top:1em"><b>Research Theme 2. Microbial Ecology in Anaerobic Digestion</b></h2>
 <!-- Text -->
 <div class="w3-col l7">
   <p style="margin-bottom: 0.5em;" align="justify">In the last centry, the synthesis of over 80,000 new chemicals has transformed human life but also brought significant health and environmental risks. Many of these man-made pollutants are completely new to the microbes we employ in wastewater treatment, challenging existing processes. However, wastewater treatment environments may also drive microbial evolution, fostering new metabolic capabilities to break down anthropogenic pollutants. We aspire to leverage advanced evolutionary analyses and well-controlled microbiology experiments, to discover new microbial genes and species that could be used to develop new remediation strategies.</p>
@@ -67,23 +113,5 @@ author_profile: false
 
 
 
-
-<h2 style="margin-top:1em"><b>Theme 2</b></h2>
-<!-- Text -->
-<div class="w3-col l7">
-  <p style="margin-bottom: 0.5em;" align="justify">In the last centry, the synthesis of over 80,000 new chemicals has transformed human life but also brought significant health and environmental risks. Many of these man-made pollutants are completely new to the microbes we employ in wastewater treatment, challenging existing processes. However, wastewater treatment environments may also drive microbial evolution, fostering new metabolic capabilities to break down anthropogenic pollutants. We aspire to leverage advanced evolutionary analyses and well-controlled microbiology experiments, to discover new microbial genes and species that could be used to develop new remediation strategies.</p>
-  <div></div>
-</div>
-<div class="w3-col l1 w3-container"></div>
-<!-- Photo -->
-<div class="w3-col l3 w3-center w3-hide-small w3-hide-medium">
-  <img src="/assets/images/evolution.png" alt="evolution" style="width:100%">
-</div>
-<div class="w3-col l3 w3-center w3-hide-large">
-  <img src="/assets/images/evolution.png" alt="evolution" style="width:50%">
-</div>
-<div class="w3-clear"></div>
-
-<h2 style="margin-top:1em"><b>Theme 3</b></h2>
-
 </body>
+
