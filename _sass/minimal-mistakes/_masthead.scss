@@ -12,7 +12,7 @@
   z-index: 20;
   padding-left: 1em;
   padding-right: 1em;
-  background-color: #e6e6e6;
+  background-color: #fff;
 
   &__inner-wrap {
     @include clearfix;
@@ -35,7 +35,7 @@
 
     nav {
       z-index: 10;
-      background-color: #e6e6e6;
+      background-color: #fff;
     }
 
     a {
