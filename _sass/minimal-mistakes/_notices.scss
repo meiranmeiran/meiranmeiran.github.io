@@ -12,7 +12,7 @@
 
 @mixin notice($notice-color) {
   margin: 1em 0 !important;  /* override*/
-  padding: 1em;
+  padding: 0.75em;
   color: $text-color;
   font-family: $global-font-family;
   font-size: $type-size-5 !important;
