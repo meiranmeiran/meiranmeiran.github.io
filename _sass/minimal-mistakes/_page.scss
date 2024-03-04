@@ -195,12 +195,12 @@ body {
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: left 5% top 75%;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
-    text-align: left;
+    text-align: center;
 
     a {
       color: #fff;
