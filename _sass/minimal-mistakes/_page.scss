@@ -189,7 +189,7 @@ body {
     position: relative;
     margin-bottom: 2em;
     padding-top: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 4em;
     padding-left: 2em;
     padding-right: 2em;
     @include clearfix;
@@ -201,21 +201,6 @@ body {
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
     text-align: center;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('/assets/images/zoom-bg-3.jpg'); /* Set the background image */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left 5% top 55%;
-    filter: blur(2px);
-    z-index: -1; /* Ensure the overlay is behind the text */
-  }
 
     a {
       color: #fff;
@@ -234,7 +219,7 @@ body {
     .page__meta,
     .page__lead,
     .btn {
-      color: #7d9948;
+      color: #FF5F0F;
       text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff,
                1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
       /*text-shadow: 2px 2px 6px rgba(#000000, 1);*/
