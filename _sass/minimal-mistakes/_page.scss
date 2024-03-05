@@ -178,7 +178,7 @@ body {
 
 .page__hero {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   @include clearfix;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
@@ -187,20 +187,20 @@ body {
 
   &--overlay {
     position: relative;
-    margin-bottom: 2em;
-    padding-top: 5em;
-    padding-bottom: 3em;
+    margin-bottom: 1em;
+    padding-top: 8em;
+    padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left 5% top 55%;
+    background-position: left 5% top 10%;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
-    text-align: center;
+    text-align: top;
 
     a {
       color: #fff;
