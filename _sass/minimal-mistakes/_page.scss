@@ -188,15 +188,15 @@ body {
   &--overlay {
     position: relative;
     margin-bottom: 1em;
-    height: 19em;
-    padding-top: 5em;
+    height: 18em;
+    padding-top: 4em;
     padding-bottom: 2em;
     padding-left: 1.5em;
     padding-right: 2em;
     @include clearfix;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left 5% top 10%;
+    background-position: left 5% top 12%;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
