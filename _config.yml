@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : "@ CEE UIUC"
 name                     : "Ran Mei"
 description              : "Environmental Microbiology Research Group @ CEE, UIUC"
-url                      : "https://meiranmeiran00.github.io"
+url                      : "https://meiranmeiran.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   :
