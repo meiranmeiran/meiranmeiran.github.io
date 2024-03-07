@@ -4,6 +4,46 @@ classes: wide
 author_profile: false
 ---
 
+<style>
+  #scrollToTopBtn
+  {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    background-color: #0092CA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  #scrollToBottomBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    background-color: #0092CA;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 7px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+        }
+
+        #scrollToTopBtn.show,
+        #scrollToBottomBtn.show {
+            opacity: 1;
+        }
+
+</style>
+
+
 <body>
 <h2>Peer-reviewed journal publications</h2>
 <p style="margin-bottom: 0.5em;">*Corresponding author, †Co-first authors.</p>
@@ -120,6 +160,59 @@ Biotechnology: Environmental Protection and Resource Recovery</i>, Imperial
 College Press, London. <a href="https://www.worldscientific.com/doi/abs/10.1142/9781783267910_0003">10.1142/9781783267910_0003</a>.<br>
 <p style="margin-top: 0.5em;">Summary of the microbial ecology involved in the treatment of an important aromatic compound in the petrochemical industry.</p>
 </ol>
+
+<!-- Scroll to top button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()">↑</button>
+
+    <!-- Scroll to bottom button -->
+    <button id="scrollToBottomBtn" onclick="scrollToBottom()">↓</button>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        var scrollToBottomBtn = document.getElementById('scrollToBottomBtn');
+
+        // Show both buttons initially
+        scrollToTopBtn.classList.add('show');
+        scrollToBottomBtn.classList.add('show');
+
+        // Show/hide buttons based on scroll position
+        window.onscroll = function () {
+            if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
+                scrollToTopBtn.classList.add('show');
+                scrollToBottomBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+                scrollToBottomBtn.classList.remove('show');
+            }
+        };
+
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Scroll to bottom function
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        // Assign click event listeners to buttons
+        scrollToTopBtn.addEventListener('click', scrollToTop);
+        scrollToBottomBtn.addEventListener('click', scrollToBottom);
+    });
+</script>
+
+
+
+
+
 </body>
 
 
