@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am an **amazing** person."
   location         : "Somewhere"
-  email            : "mrzhsy@gmail.com"
+  email            : "ranmei2@illinois.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
