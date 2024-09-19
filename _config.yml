@@ -135,7 +135,7 @@ footer:
     - label: "ResearchGate"
       icon: "fab fa-researchgate"
       url: "https://www.researchgate.net/profile/Ran-Mei-3"
-    - label: "CEE@UIUC"
+    - label: "CEE@University of Illinois Urbana-Champaign"
       icon: "fas fa-link"
       url: "https://cee.illinois.edu/"
     - label: "205 N Mathews Ave, Urbana, IL 61801"
