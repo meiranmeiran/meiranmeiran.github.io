@@ -11,17 +11,22 @@ header:
 <link rel="stylesheet" href="/assets/css/w3.css">
 
 <style>
-  div.polaroid {
+ div.polaroid {
+    width: auto;
+    max-width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    display: flex; /* Align contents within the polaroid */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items horizontally */
+}
 
-      width: auto;
-      max-width: 250px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 24px;
-
-    }
+.container p {
+    margin: 5px 0; /* Adjusts spacing between text elements */
+}
 
   div.container {
       padding: 10px;
@@ -45,10 +50,10 @@ header:
   <!-- Photo -->
 <div class="w3-col l3 m4">
   <div class="polaroid w3-hide-small" style="text-align: center;">
-    <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%">
-    <div class="container" style="text-align: center; display: flex; flex-direction: column; align-items: center;">
-        <p style="margin: 0; font-weight: bold;">Ran Mei</p>
-        <p class="medium" style="margin: 0;">Assistant Professor</p>
+    <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%; display: block; margin: 0 auto;">
+    <div class="container" style="text-align: center;">
+        <p style="margin: 5px 0; font-weight: bold;">Ran Mei</p>
+        <p class="medium" style="margin: 5px 0;">Assistant Professor</p>
     </div>
   </div>
 </div>
@@ -100,7 +105,7 @@ header:
 
   <!-- Text -->
   <div class="w3-col l7 m6">
-    <p style="margin-bottom: 0.5em;" align="justify">Yuan is a master's student in the Environmental Engineering & Science program. She completed her bachelor's degree in Environmental Science and Engineering at University of Science and Technology of China (USTC). Her current research focuses on syntrophism in anaerobic environment. Yuan enjoys reading and traveling, and I aspire to, as the Chinese proverb says, "read ten thousand books and travel ten thousand miles."</p>
+    <p style="margin-bottom: 0.5em;" align="justify">Yuan started her master’s studies in January 2025 in the Environmental Engineering & Science program at the Department of Civil and Environmental Engineering, University of Illinois Urbana-Champaign. She earned her bachelor's degree in Environmental Science and Engineering from the University of Science and Technology of China (USTC, 2024). Her research focuses on syntrophism in anaerobic environments. Outside of academics, Yuan enjoys reading and traveling, aspiring to "read ten thousand books and travel ten thousand miles," as a Chinese proverb inspires.</p>
   </div>
   <div class="w3-clear"> </div>
   <!-- End of second person -->
