@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 locale                   : "en-US"
 title                    : "Mei Research Group"
 title_separator          : "-"
-subtitle                 : "@ CEE University of Illinois Urbana-Champaign"
+subtitle                 : "@ University of Illinois Urbana-Champaign"
 name                     : "Ran Mei"
 description              : "Environmental Microbiology Research Group @ CEE, UoI"
 url                      : "https://meiranmeiran.github.io"
