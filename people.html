@@ -11,72 +11,85 @@ header:
 <link rel="stylesheet" href="/assets/css/w3.css">
 
 <style>
- div.polaroid {
-    width: auto;
-    max-width: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-    display: flex; /* Align contents within the polaroid */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center-align items horizontally */
-}
-
-.container p {
-    margin: 5px 0; /* Adjusts spacing between text elements */
-}
+  div.polaroid {
+      width: auto;
+      max-width: 250px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      text-align: center;
+      margin: 24px auto; /* Center-align and add vertical spacing */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
   div.container {
       padding: 10px;
-    }
+      text-align: center;
+  }
+
+  div.container p {
+      margin: 5px 0;
+      line-height: 1.4; /* Improve text readability */
+  }
+
   hr {
       height: 1px;
-      background-color: #d1d3d4; /* Or any color you prefer */
-      border: none; /* Remove any default border */
-      margin-top: 20px; /* Add some space above the line */
-      margin-bottom: 20px; /* Add some space below the line */
-    }
-}
+      background-color: #d1d3d4; /* Customize line color */
+      border: none; /* Remove default border */
+      margin: 20px 0; /* Add vertical spacing around the line */
+  }
 </style>
 
+
 <body>
+  <div class="w3-padding-24">
+    <h3 style="margin-top:1em"><b>Current Members</b></h3>
+    <hr>
 
-<div class="w3-padding-24">
-  <h3 style="margin-top:1em"><b>Current Members</b></h3>
-  <hr>
-  <!-- First person -->
-  <!-- Photo -->
-<div class="w3-col l3 m4">
-  <div class="polaroid w3-hide-small" style="text-align: center;">
-    <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%; display: block; margin: 0 auto;">
-    <div class="container" style="text-align: center;">
-        <p style="margin: 5px 0; font-weight: bold;">Ran Mei</p>
-        <p class="medium" style="margin: 5px 0;">Assistant Professor</p>
-    </div>
-  </div>
-</div>
+    <!-- First person -->
+    <div class="w3-row">
+      <!-- Photo -->
+      <div class="w3-col l3 m4">
+        <div class="polaroid w3-hide-small">
+          <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%; display: block; margin: 0 auto;">
+          <div class="container">
+              <p style="font-weight: bold;">Ran Mei</p>
+              <p class="medium" style="text-align: center;">Assistant Professor</p>
+          </div>
+        </div>
+      </div>
 
-  <div class="w3-col l1 m1 w3-container"></div>
+      <!-- Spacer -->
+      <div class="w3-col l1 m1 w3-container"></div>
 
-  <div class="w3-center w3-hide-large w3-hide-medium">
-    <div class="polaroid">
-      <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%">
-      <div class="container">
-          <p><b>Ran Mei</b></p>
-          <p class="medium" style="margin-bottom:0">Assistant Professor</p>
+      <!-- Mobile-friendly Polaroid -->
+      <div class="w3-center w3-hide-large w3-hide-medium">
+        <div class="polaroid">
+          <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%">
+          <div class="container">
+              <p><b>Ran Mei</b></p>
+              <p class="medium">Assistant Professor</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="w3-col l7 m6">
+        <p style="margin-bottom: 0.5em;" align="justify">
+          Ran joined the Department of Civil and Environmental Engineering at the University of Illinois Urbana-Champaign as an Assistant Professor in November 2024. A proud alumnus of the department, he earned his Ph.D. in 2020 and M.S. in 2015. Ran also holds a B.S. degree from Peking University in China (2013) and gained postdoctoral experience at AIST (2021–2023) and JAMSTEC (2023–2024) in Japan. His research focuses on microbial ecology in natural and engineered ecosystems, with a particular emphasis on advancing sustainable water systems. In addition to research, Ran is passionate about teaching and will be instructing CEE 444: Biological Principles in Environmental Engineering and CEE 538: Water Quality Control II.
+        </p>
+        <div></div>
+        <p align="left">
+          <i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en">Google Scholar</a> |
+          <i class="fa fa-file"></i> <a href="/assets/docs/RanMei_CV.pdf">CV</a> |
+          <i class="fa fa-envelope"></i> ranmei2{at}illinois.edu
+        </p>
       </div>
     </div>
-  </div>
 
-  <!-- Text -->
-  <div class="w3-col l7 m6">
-    <p style="margin-bottom: 0.5em;" align="justify">Ran joined the Department of Civil and Environmental Engineering at the University of Illinois Urbana-Champaign as an Assistant Professor in November 2024. A proud alumnus of the department, he earned his Ph.D. in 2020 and M.S. in 2015. Ran also holds a B.S. degree from Peking University in China (2013) and gained postdoctoral experience at AIST (2021–2023) and  and JAMSTEC (2023–2024) in Japan. His research focuses on microbial ecology in natural and engineered ecosystems, with a particular emphasis on advancing sustainable water systems. In addition to research, Ran is passionate about teaching and will be instructing CEE 444: Biological Principles in Environmental Engineering and CEE 538: Water Quality Control II.</p>
-    <div></div>
-    <p align="left"><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en"> Google Scholar</a> | <i class="fa fa-file"></i> <a href="/assets/docs/RanMei_CV.pdf">CV</a> | <i class="fa fa-envelope"></i> ranmei2{at}illinois.edu</p>
+    <div class="w3-clear"></div>
   </div>
-  <div class="w3-clear"></div>
+</body>
   <!-- End of first person -->
 
   <!-- Second person -->
@@ -86,7 +99,7 @@ header:
       <img src="/assets/images/YuanFang.jpg" alt="Yuan Fang" style="width:100%">
       <div class="container">
         <p><b>Yuan Fang</b></p>
-        <p class="small" style="margin-bottom:0">M.S. student</p>
+        <p class="medium" style="margin-bottom:0">M.S. student</p>
       </div>
     </div>
   </div>
@@ -98,7 +111,7 @@ header:
       <img src="/assets/images/YuanFang.jpg" alt="Yuan Fang" style="width:100%">
       <div class="container">
         <p><b>Yuan Fang</b></p>
-        <p class="small" style="margin-bottom:0">M.S. student</p>
+        <p class="medium" style="margin-bottom:0">M.S. student</p>
       </div>
     </div>
   </div>
