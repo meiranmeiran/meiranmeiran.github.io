@@ -12,105 +12,116 @@ header:
 
 <style>
   div.polaroid {
-
       width: auto;
       max-width: 250px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 24px;
-
-    }
+      margin: 24px auto; /* Center-align and add vertical spacing */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
 
   div.container {
+      text-align: center;
       padding: 10px;
-    }
+  }
+
+  div.container p {
+      margin: 5px 0;
+      line-height: 1.4; /* Improve text readability */
+  }
+
   hr {
       height: 1px;
-      background-color: #d1d3d4; /* Or any color you prefer */
-      border: none; /* Remove any default border */
-      margin-top: 20px; /* Add some space above the line */
-      margin-bottom: 20px; /* Add some space below the line */
-    }
-}
+      background-color: #d1d3d4; /* Customize line color */
+      border: none; /* Remove default border */
+      margin: 20px 0; /* Add vertical spacing around the line */
+  }
 </style>
 
+
 <body>
+  <div class="w3-padding-24">
+    <h3 style="margin-top:1em"><b>Current Members</b></h3>
+    <hr>
 
-<div class="w3-padding-24">
-  <h3 style="margin-top:1em"><b>Current Members</b></h3>
-  <hr>
-  <!-- First person -->
-  <!-- Photo -->
-  <div class="w3-col l3 m4">
-    <div class="polaroid w3-hide-small">
-      <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%">
-      <div class="container">
+    <!-- Person #1-->
+    <div class="w3-col l3 m4" style="margin: auto;">
+      <div class="polaroid w3-hide-small" style="text-align: center; margin: auto; display: inline-block;">
+        <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%; display: block; margin: 0 auto;">
+        <div class="container" style="padding: 10px;">
+          <p><b>Ran Mei</b> <span style="font-size: small;">Assistant Professor</span></p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="w3-col l1 m1 w3-container"></div>
+
+    <!-- Mobile-friendly Polaroid -->
+    <div class="w3-center w3-hide-large w3-hide-medium">
+      <div class="polaroid">
+        <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%">
+        <div class="container">
           <p><b>Ran Mei</b></p>
-          <p class="small" style="margin-bottom:0">Assistant Professor</p>
+          <p><center>Assistant Professor</center></p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="w3-col l1 m1 w3-container"></div>
+    <!-- Text -->
+    <div class="w3-col l7 m6">
+      <p style="margin-bottom: 0.5em;" align="justify">
+      Ran joined the Department of Civil and Environmental Engineering at the University of Illinois Urbana-Champaign as an Assistant Professor in November 2024. A proud alumnus of the department, he earned his Ph.D. in 2020 and M.S. in 2015. He also holds a B.S. degree from Peking University in China (2013) and gained postdoctoral experience at AIST (2021–23) and JAMSTEC (2023–24) in Japan. His research focuses on microbial ecology in natural and engineered ecosystems, with a particular emphasis on advancing sustainable water systems. Ran is also passionate about teaching and teaches <i>Water Quality Control II</i> (CEE 538) and <i>Biological Principles in Environmental Engineering</i> (CEE 444).
+      </p>
+      <div></div>
+      <p align="left">
+        <i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en">Google Scholar</a> |
+        <i class="fa fa-file"></i> <a href="/assets/docs/RanMei_CV.pdf">CV</a> |
+        <i class="fa fa-envelope"></i> ranmei2{at}illinois.edu
+      </p>
+    </div>
 
-  <div class="w3-center w3-hide-large w3-hide-medium">
-    <div class="polaroid">
-      <img src="/assets/images/Mei.jpg" alt="Ran Mei" style="width:100%">
-      <div class="container">
-          <p><b>Ran Mei</b></p>
-          <p class="small" style="margin-bottom:0">Assistant Professor</p>
+    <div class="w3-clear"></div>
+
+    <!-- End of person #1-->
+
+    <!-- Person #2-->
+    <div class="w3-col l3 m4" style="margin: auto;">
+      <div class="polaroid w3-hide-small" style="text-align: center; margin: auto; display: inline-block;">
+        <img src="/assets/images/YuanFang.jpg" alt="Yuan Fang" style="width:100%; display: block; margin: 0 auto;">
+        <div class="container" style="padding: 10px;">
+          <p><b>Yuan Fang</b> <span style="font-size: small;">M.S. Student</span></p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Text -->
-  <div class="w3-col l7 m6">
-    <p style="margin-bottom: 0.5em;" align="justify">Ran joined CEE at UIUC as an Assistant Professor in Winter 2024 (yes, I am coming home!). I got my Ph.D. (2020) and M.S. (2015) here. I also had a B.S. (2013) from Peking University in China and postdoctoral experiences at Japan's National Institute of Advanced Industrial Science and Technology (AIST, 2021-23) and Japan Agency for Marine-Earth Science and Technology (JAMSTEC, 2023-24). My research is centered around microbial ecology in natural and engineered ecosystems, with an emphasis on promoting sustainable water systems. Teaching is another passion of mine, and I will be teaching CEE444 (Biological Principles in Envrionemntal Engineering) and CEE538 (Water Quality Control II).</p>
-    <div></div>
-    <p align="left"><i class="fas fa-graduation-cap"></i> <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en"> Google Scholar</a> | <i class="fa fa-file"></i> <a href="/assets/docs/RanMei_CV.pdf">CV</a> | <i class="fa fa-envelope"></i> ranmei2{at}illinois.edu</p>
-  </div>
-  <div class="w3-clear"></div>
-  <!-- End of first person -->
+    <!-- Spacer -->
+    <div class="w3-col l1 m1 w3-container"></div>
 
-  <!-- Second person -->
-  <!-- Photo -->
-  <div class="w3-col l3 m4">
-    <div class="polaroid w3-hide-small">
-      <img src="/assets/images/cat.jpg" alt="Momo" style="width:100%">
-      <div class="container">
-        <p><b>Yuan Fang</b></p>
-        <p class="small" style="margin-bottom:0">M.S. student</p>
+    <!-- Mobile-friendly Polaroid -->
+    <div class="w3-center w3-hide-large w3-hide-medium">
+      <div class="polaroid">
+        <img src="/assets/images/YuanFang.jpg" alt="Yuan Fang" style="width:100%">
+        <div class="container">
+          <p><b>Yuan Fang</b></p>
+          <p><center>M.S. student</center></p>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="w3-col l1 m1 w3-container"> </div>
-
-  <div class="w3-center w3-hide-large w3-hide-medium">
-    <div class="polaroid">
-      <img src="/assets/images/cat.jpg" alt="Momo" style="width:100%">
-      <div class="container">
-        <p><b>Momo</b></p>
-        <p class="small" style="margin-bottom:0">M.S. student</p>
-      </div>
+    <!-- Text -->
+    <div class="w3-col l7 m6">
+      <p style="margin-bottom: 0.5em;" align="justify">
+      Yuan started her master’s studies in January 2025 in the Environmental Engineering & Science program at the Department of Civil and Environmental Engineering, University of Illinois Urbana-Champaign. She earned her bachelor's degree in Environmental Science and Engineering from the University of Science and Technology of China (USTC, 2024). Her research focuses on syntrophism in anaerobic environments. Outside of academics, Yuan enjoys reading and traveling, aspiring to "read ten thousand books and travel ten thousand miles," as a Chinese proverb inspires.
+      </p>
     </div>
+
+    <div class="w3-clear"></div>
+    <!-- End of person #2-->
+
   </div>
-
-  <!-- Text -->
-  <div class="w3-col l7 m6">
-    <p style="margin-bottom: 0.5em;" align="justify">A serious observer of the world. Special interests in imitating various bird chirping.</p>
-  </div>
-  <div class="w3-clear"> </div>
-  <!-- End of second person -->
-</div>
-
-<div class="w3-row-padding"> </div>
-
-
-
-
-</div>
 </body>
 
