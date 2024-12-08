@@ -9,11 +9,11 @@ main:
    - title: "Publications"
      url: /publications/
      description: "Read our work"
-   - title: "People"
-     url: /people/
-     description: "Learn about people in our group and working with us"
-   - title: "Opportunities"
-     url: /opportunities/
+   - title: "Team"
+     url: /team/
+     description: "Learn about people in our team"
+   - title: "Join Us"
+     url: /join/
      description: "Check out the opportunities"
    - title: "Album"
      url: /album/
