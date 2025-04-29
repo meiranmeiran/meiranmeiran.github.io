@@ -12,7 +12,7 @@ main:
    - title: "Team"
      url: /team/
      description: "Learn about people in our team"
-   - title: "Join Us"
+   - title: "Join"
      url: /join/
      description: "Check out the opportunities"
    - title: "Album"
