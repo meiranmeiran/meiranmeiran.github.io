@@ -55,6 +55,21 @@ header:
 </head>
 
 
+<script>
+  function toggleNews() {
+    var moreNews = document.getElementById("more-news");
+    var toggleLink = document.getElementById("toggle-link");
+    if (moreNews.style.display === "none") {
+      moreNews.style.display = "block";
+      toggleLink.textContent = "Fewer News";
+    } else {
+      moreNews.style.display = "none";
+      toggleLink.textContent = "More News";
+    }
+  }
+</script>
+
+
 <body>
 <div class="w3-padding-24">
   <h3 style="margin-top:1em"><b>Welcome</b></h3>
@@ -63,13 +78,15 @@ header:
   <br>
   <p align="justify"><b>Diversity</b> is essential in the microbial world we research - often microbes with varied traits cooperate to accomplish a metabolic task that would be impossible individually. Drawing a parallel, the diversity of human society, and our recognition of it, serves as a foundation for innovative ideas and creative accomplishments. We value diversity, equity, and inclusion, and support students and researchers of all backgrounds and identities.</p>
   <h3 style="margin-top:1em"><b>News</b></h3>
-  <hr>
+<hr>
   <p align="justify" class="notice--primary">[2025.4] Dr. Masaru Nobu from JAMSTEC visited us! Welcome back to Newmark!</p>
   <div></div>
   <p align="justify" class="notice--info">[2025.3] A proposal about microplastic-degrading algae (Ran as the UIUC co-PI), in collaboration with Dr. Himali M. K. Delanka-Pedige (SIU) has been funded by the 2025 IIN Sustaining Illinois Seed Grant Program.</p>
   <div></div>
   <p align="justify" class="notice--primary">[2025.1] A warm welcome to Yuan, the first graduate student to join our group!</p>
   <div></div>
+<!-- Hidden news section starts here -->
+<div id="more-news" style="display: none;">
   <p align="justify" class="notice--info">[2024.12] A proposal about novel aeration strategies for wastewater treatment (Ran as the UIUC lead PI), in collaboration with Dr. Jer-Horng Wu (NCKU), Dr. Chang-Ping Yu (NTU), and Dr. Yu-Wei Wu (TMU), has been funded by the 2024 UoI/UAAT Joint Research Project.</p>
   <div></div>
   <p align="justify" class="notice--primary">[2024.11] Ran begins his new journey at Newmark!</p>
@@ -85,5 +102,11 @@ header:
   <p align="justify" class="notice--info">[2023.7] Ran has been funded with the <a href="https://jgi.doe.gov/jgi-announces-second-round-of-2023-new-investigator-awardees/">JGI CSP New Investigator Award</a> from the Joint Genome Institute, U.S. DOE.</p>
   <div></div>
   <p align="justify" class="notice--primary">[2023.2] Our <a href="https://academic.oup.com/pnasnexus/advance-article/doi/10.1093/pnasnexus/pgad023/7010768">paper</a>, exploring the evolutionary history of methanogenesis, has been published in <i>PNAS Nexus</i>.</p>
+
 </div>
+
+<!-- Toggle button -->
+<div style="text-align: center; margin-top: 20px;">
+  <button onclick="toggleNews()" id="toggle-link" style="background-color: #f26522; color: white; font-weight: bold; border: none; padding: 12px 24px; font-size: 16px; cursor: pointer; border-radius: 4px;">More News</button>
+</div></div>
 </body>
