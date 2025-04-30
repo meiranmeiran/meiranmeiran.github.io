@@ -77,9 +77,17 @@ header:
   <p align="justify">Welcome to the <b>Mei</b> Research Group working at the <b><b>M</b></b>icrobiome-<b><b>E</b></b>nvironment <b><b>I</b></b>nterface! We investigate fundamental aspects of microbial diversity, physiology, and ecology, applying this knowledge to engineered water systems, such as wastewater treatment. Our goal is to develop microbiology-informed engineering strategies that enhance system performance and mitigate the environmental impact of various waste streams. To achieve our objectives, we integrate bioinformatics, microbiology — including microbial cultivation — and engineering principles. Learn more about our research <a href="/research/">here</a>.<br>
   <br>
   <p align="justify"><b>Diversity</b> is essential in the microbial world we research - often microbes with varied traits cooperate to accomplish a metabolic task that would be impossible individually. Drawing a parallel, the diversity of human society, and our recognition of it, serves as a foundation for innovative ideas and creative accomplishments. We value diversity, equity, and inclusion, and support students and researchers of all backgrounds and identities.</p>
+
   <h3 style="margin-top:1em"><b>News</b></h3>
-<hr>
-  <p align="justify" class="notice--primary">[2025.4] Dr. Masaru Nobu from JAMSTEC visited us! Welcome back to Newmark!</p>
+  <hr>
+
+  <p align="justify" class="notice--primary">
+  [2025.4] Dr. Masaru Nobu from JAMSTEC visited us! Welcome back to Newmark! <a href="javascript:void(0);" onclick="toggleImage('nobu')">[Click to View]</a>
+  </p>
+  <img id="nobu"
+     src="/assets/images/NOBU_Newmark.jpg"
+     style="display: none; max-width: 40%; height: auto; display: block; margin: 8px auto 0;"
+     alt="Nobu">
   <div></div>
   <p align="justify" class="notice--info">[2025.3] A proposal about microplastic-degrading algae (Ran as the UIUC co-PI), in collaboration with Dr. Himali M. K. Delanka-Pedige (SIU) has been funded by the 2025 IIN Sustaining Illinois Seed Grant Program.</p>
   <div></div>
@@ -109,4 +117,12 @@ header:
 <div style="text-align: center; margin-top: 20px;">
   <button onclick="toggleNews()" id="toggle-link" style="background-color: #f26522; color: white; font-weight: bold; border: none; padding: 12px 24px; font-size: 16px; cursor: pointer; border-radius: 4px;">More News</button>
 </div></div>
+
+<script>
+  function toggleImage(id) {
+    var img = document.getElementById(id);
+    img.style.display = (img.style.display === "none") ? "block" : "none";
+  }
+</script>
+
 </body>
