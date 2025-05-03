@@ -81,6 +81,16 @@ header:
 
   <h3 style="margin-top:1em"><b>News</b></h3>
   <hr>
+<p align="justify" class="notice--info">
+  [2025.5] After very hard and smart work, Yuan got the right peaks from our new GC2030 😊
+  <a href="javascript:void(0);" onclick="toggleImage('GC')">[Click to View]</a>
+</p>
+
+<div id="GC" style="display: none; margin-top: 8px; flex-wrap: wrap; justify-content: center; align-items: center; gap: 16px;">
+  <img src="/assets/images/GC.jpg" style="width: 48%; max-width: 500px; height: auto; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); border-radius: 8px;" alt="GC">
+  <img src="/assets/images/Yuan.jpg" style="width: 48%; max-width: 500px; height: auto; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); border-radius: 8px;" alt="Yuan">
+</div>
+
 
   <p align="justify" class="notice--primary">
   [2025.4] Dr. Masaru Nobu from JAMSTEC visited us! Welcome back to Newmark! <a href="javascript:void(0);" onclick="toggleImage('nobu')">[Click to View]</a>
@@ -118,8 +128,12 @@ header:
 
 <script>
   function toggleImage(id) {
-    var img = document.getElementById(id);
-    img.style.display = (img.style.display === "none") ? "block" : "none";
+    const el = document.getElementById(id);
+    if (el.style.display === "none" || el.style.display === "") {
+      el.style.display = "flex";
+    } else {
+      el.style.display = "none";
+    }
   }
 </script>
 
