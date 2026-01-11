@@ -12,9 +12,12 @@ main:
    - title: "Team"
      url: /team/
      description: "Learn about people in our team"
-   - title: "Join"
-     url: /join/
-     description: "Check out the opportunities"
+   - title: "Podcast"
+     url: /podcast/
+     description: "Faucet and drain science"
    - title: "Album"
      url: /album/
      description: "Life is beyond research, and is beautiful"
+   - title: "Join"
+     url: /join/
+     description: "Check out the opportunities"
