@@ -15,6 +15,7 @@ layout: null
     <language>en-us</language>
 
     <itunes:author>Mei Research Group</itunes:author>
+    <itunes:image href="https://meiranmeiran.github.io/assets/images/waterdrop.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
 
@@ -23,13 +24,23 @@ layout: null
       <title>{{ ep.title }}</title>
       <description><![CDATA[{{ ep.description }}]]></description>
       <enclosure
-        url="{{ site.url }}{{ ep.audio }}"
-        type="audio/mpeg" />
+      url="{{ site.url }}{{ ep.audio }}"
+      length="{{ ep.length }}"
+      type="audio/mpeg"/>
       <guid>{{ site.url }}{{ ep.audio }}</guid>
       <pubDate>{{ ep.pubdate | date_to_rfc822 }}</pubDate>
       <itunes:duration>{{ ep.duration }}</itunes:duration>
     </item>
     {% endfor %}
+
+
+
+
+
+
+
+
+
   </channel>
 
 </rss>
