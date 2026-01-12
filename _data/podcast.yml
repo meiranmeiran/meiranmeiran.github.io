@@ -13,13 +13,36 @@
 - title: "When the Cloud Gets Thirsty: How Data Centers Use Our Water"
   image: "/assets/images/datacenter.jpg"
   image_source_name: "Jason Lindsey"
-  image_source_url: "https://unsplash.com"
+  image_source_url: "https://publicaffairs.photoshelter.com"
   description: >
     Data centers power the internet and AI—but they also consume enormous amounts
-    of water. In this episode, Elias and Ian (CEE 437, Fall 2025, UIUC) discuss how technological progress intersects with water sustainability.
+    of water. In this episode, Elias Hill and Ian McGuire (CEE 437, Fall 2025, UIUC) discuss how technological progress intersects with water sustainability.
   audio: "/assets/audio/Ian_Elias.mp3"
   length: "13594248"
   duration: "09:26"
   pubdate: "Mon, 12 Jan 2026 13:20:00 -0600"
   authors: "Elias Hill & Ian McGuire · CEE 437 · Fall 2025"
 
+- title: "The Plastics You Can’t See in Water"
+  image: "/assets/images/plastics.jpg"
+  image_source_name: "www.thecardiologyadvisor.com"
+  image_source_url: "https://www.thecardiologyadvisor.com/features/microplastics-and-cardiovascular-health/"
+  description: >
+    Microplastics are everywhere—from the water we drink to the food we eat—yet most of them are too small to see. In this episode, Paul Sas speaks with Abby Jackman (CEE 437, Fall 2025, UIUC) about what microplastics are, how they enter water systems and food webs, and why wastewater treatment plays a critical role in their spread.
+  audio: "/assets/audio/Paul_Abby.mp3"
+  length: "19836051"
+  duration: "13:46"
+  pubdate: "Mon, 12 Jan 2026 13:30:00 -0600"
+  authors: "Paul Sas & Abby Jackman · CEE 437 · Fall 2025"
+
+- title: "Water From Source to Your Tap"
+  image: "/assets/images/source.jpg"
+  image_source_name: "www.discoverwater.co.uk"
+  image_source_url: "https://www.discoverwater.co.uk/treatment-supply"
+  description: >
+    Where does tap water come from, and what happens to it before it reaches your glass? In this episode, Gursi Nanda speaks with Elisha Zhi EN Foo (CEE 437, Fall 2025, UIUC) about the journey of drinking water—from rivers and aquifers through treatment processes like coagulation, filtration, and disinfection.
+  audio: "/assets/audio/Elisha_Gursi.mp3"
+  length: "14700168"
+  duration: "10:12"
+  pubdate: "Mon, 12 Jan 2026 13:40:00 -0600"
+  authors: "Gursi Nanda & Elisha Zhi EN Foo · CEE 437 · Fall 2025"
