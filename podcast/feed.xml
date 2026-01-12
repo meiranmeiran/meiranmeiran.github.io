@@ -20,7 +20,7 @@ layout: null
     <itunes:type>episodic</itunes:type>
     <itunes:category text="Science"></itunes:category>
 
-    {% for ep in site.data.podcast.episodes %}
+    {% for ep in site.data.podcast %}
     <item>
       <title>{{ ep.title }}</title>
       <description><![CDATA[{{ ep.description }}]]></description>
@@ -33,14 +33,6 @@ layout: null
       <itunes:duration>{{ ep.duration }}</itunes:duration>
     </item>
     {% endfor %}
-
-
-
-
-
-
-
-
 
   </channel>
 
