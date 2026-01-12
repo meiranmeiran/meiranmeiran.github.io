@@ -1,0 +1,35 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+
+  <channel>
+    <title>Faucet and Drain Science: Explaining Water, One Drop at a Time</title>
+    <link>{{ site.url }}/podcast/</link>
+    <description>
+      Student-produced interviews translating water quality science and engineering
+      into accessible conversations about everyday water issues.
+    </description>
+    <language>en-us</language>
+
+    <itunes:author>Mei Research Group</itunes:author>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+
+    {% for ep in site.data.podcast.episodes %}
+    <item>
+      <title>{{ ep.title }}</title>
+      <description><![CDATA[{{ ep.description }}]]></description>
+      <enclosure
+        url="{{ site.url }}{{ ep.audio }}"
+        type="audio/mpeg" />
+      <guid>{{ site.url }}{{ ep.audio }}</guid>
+      <pubDate>{{ ep.pubdate | date_to_rfc822 }}</pubDate>
+      <itunes:duration>{{ ep.duration }}</itunes:duration>
+    </item>
+    {% endfor %}
+  </channel>
+
+</rss>
