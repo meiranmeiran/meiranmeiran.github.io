@@ -22,3 +22,18 @@
 </div>
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. Updated on {{ site.time | date: '%D' }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('audio').forEach(audio => {
+    audio.addEventListener('play', () => {
+      console.log('Audio play:', audio.dataset.episode);
+      if (typeof gtag === 'function') {
+        gtag('event', 'audio_play', {
+          episode: audio.dataset.episode || 'unknown'
+        });
+      }
+    });
+  });
+});
+</script>
