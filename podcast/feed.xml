@@ -9,12 +9,12 @@ layout: null
     <title>Faucet and Drain Science: Explaining Water, One Drop at a Time</title>
     <link>{{ site.url }}/podcast/</link>
     <description>
-      Student-produced interviews translating water quality science and engineering
+      Students at the University of Illinois Urbana-Champaign produced interviews translating water quality science and engineering
       into accessible conversations about everyday water issues.
     </description>
     <language>en-us</language>
 
-    <itunes:author>Mei Research Group</itunes:author>
+    <itunes:author>Ran Mei</itunes:author>
     <itunes:image href="https://meiranmeiran.github.io/assets/images/waterdrop.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
