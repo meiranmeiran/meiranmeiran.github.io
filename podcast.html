@@ -3,7 +3,7 @@ layout: splash
 title: Faucet and Drain Science
 classes: wide
 author_profile: false
-excerpt: Faucet and Drain Science - Explaining Water, One Drop at a Time
+excerpt: Faucet & Drain Science - Explaining Water, One Drop at a Time
 header:
   overlay_image: /assets/images/waterdrop.jpg
   show_overlay_excerpt: true
@@ -35,24 +35,10 @@ header:
   margin-bottom: 1rem;
 }
 
-.podcast-page .podcast-cover {
-  width: 200px;
-  max-height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-.podcast-page h2 {
-  font-weight: 700;
-  font-style: italic;
-  margin-bottom: 0.5rem;
-}
-
 .podcast-page .podcast-description {
   text-align: justify;
   text-justify: inter-word;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 0.5rem;
 }
 
@@ -84,6 +70,7 @@ header:
 .podcast-page .episode-content h3 {
   margin: 0 0 0.25rem 0;
   font-weight: 600;
+  font-style: italic;
 }
 
 .podcast-page .episode-meta {
@@ -116,42 +103,36 @@ header:
 
 @media (max-width: 768px) {
 
-  .podcast-page .podcast-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .podcast-page .podcast-cover {
-    width: 100%;
-    max-width: 220px;
-    max-height: none;
-  }
-
   .podcast-page .podcast-description {
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
-  .podcast-page .episode-row {
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
-  }
+/* Episode grid */
+.podcast-page .episode-row {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
 
-  .podcast-page .episode-art img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-  }
+/* Let summary + audio span across duration column */
+.podcast-page .episode-body {
+  grid-column: 2 / -1; /* spans from text column to right edge */
+}
 
-  .podcast-page .episode-duration {
-    text-align: left;
-    font-size: 0.85rem;
-  }
+/* Ensure summary is not width-limited */
+.podcast-page .episode-summary {
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: none;
+}
 
-  .podcast-page .episode-summary {
-    text-align: left;
-  }
+/* Audio should also fill full width */
+.podcast-page .episode-body audio {
+  width: 100%;
+}
+
 }
 
 /* ===============================
@@ -175,13 +156,7 @@ header:
   <header class="podcast-header">
     <div class="podcast-meta">
       <p class="podcast-description">
-        Water is vital to human society and the planet, yet the science and engineering behind
-        safe and reliable water systems often remain invisible to the public. This podcast
-        consists of short, interview-style episodes produced by students in CEE 437 and
-        CEE 538, translating water quality science and engineering into accessible conversations
-        about everyday water issues. The project also helps students practice
-        <strong>community-facing science communication skills</strong> that are valuable for
-        their future careers.
+        Water is vital to human society and the planet, yet the science and engineering behind safe and reliable water systems often remain invisible to the public. This podcast consists of interview-style episodes produced by students in CEE courses 437 and 538, translating water quality science and engineering into accessible conversations about everyday water issues. The project also helps students practice <strong>community-facing science communication skills</strong> valuable for their future careers.
       </p>
     </div>
   </header>
@@ -219,6 +194,35 @@ header:
         9:26 min
       </div>
     </div>
+
+    <!-- Episode 1 -->
+    <div class="episode-row">
+      <div class="episode-art">
+        <img src="/assets/images/datacenter.jpg"
+             alt="Data center servers and cooling infrastructure">
+      </div>
+
+      <div class="episode-content">
+        <h3>When the Cloud Gets Thirsty: How Data Centers Use Our Water</h3>
+        <div class="episode-meta">
+          Elias Hill & Ian McGuire · CEE 437 · Fall 2025
+        </div>
+        <p class="episode-summary">
+          Data centers power the internet, cloud storage, and AI—but they also consume enormous
+          amounts of water. In this episode, Elias and Ian have a conversation
+          about balancing technological progress with the fundamental need for water.
+        </p>
+
+        <audio controls>
+          <source src="/assets/audio/Ian_Elias.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+      <div class="episode-duration">
+        9:26 min
+      </div>
+    </div>
+
 
   </section>
 
