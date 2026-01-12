@@ -1,0 +1,9 @@
+episodes:
+  - title: "When the Cloud Gets Thirsty: How Data Centers Use Our Water"
+    image: "/assets/images/datacenter.jpg"
+    image_source_name: "Jason Lindsey"
+    image_source_url: "https://publicaffairs.photoshelter.com/search/result/I0000yKHsZjlAqbE?terms=data%20center&"
+    description: >
+                Data centers power the internet, cloud storage, and AI—but they also consume enormous amounts of water. In this episode, Elias and Ian have a conversation about balancing technological progress with the fundamental need for water.
+    audio: "/assets/audio/Ian_Elias.mp3"
+    authors: "Elias Hill & Ian McGuire · CEE 437 · Fall 2025"

@@ -42,105 +42,77 @@ header:
   margin-bottom: 0.5rem;
 }
 
-/* ===============================
-   EPISODE LIST
-   =============================== */
-
-.podcast-page .podcast-episodes {
-  margin-top: 1.5rem;
+/* Episode layout */
+.episode {
+  padding: 1.5rem 0;
 }
 
-/* Desktop episode layout */
-.podcast-page .episode-row {
+.episode-grid {
   display: grid;
-  grid-template-columns: 160px 1fr;
+  grid-template-columns: 140px 1fr;
   gap: 1.5rem;
   align-items: center;
-
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
-.podcast-page .episode-row:first-child {
-  border-top: 1px solid #e5e5e5;
-  padding-top: 1.25rem;
-}
-
-.podcast-page .episode-row:last-child {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 0;
-}
-
-.podcast-page .episode-art img {
-  width: 160px;
-  height: 160px;
+.episode-image {
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-.podcast-page .episode-content h3 {
-  margin: 0 0 0.25rem 0;
+/* Text */
+.episode-title {
+  margin: 0;
+  font-size: 1.25rem;
   font-weight: 600;
   font-style: italic;
 }
 
-.podcast-page .episode-meta {
-  font-size: 0.85rem;
+.episode-meta {
   color: #666;
-  margin-bottom: 0.5rem;
+  margin: 0.25rem 0 0.75rem;
+  font-size: 0.95rem;
 }
 
-.podcast-page .episode-summary {
+.episode-description {
+  margin-bottom: 1rem;
   text-align: justify;
-  text-justify: inter-word;
-  line-height: 1.5;
-  margin-bottom: 0.75rem;
+  margin-left: 0;
+  padding-left: 0;
+  text-indent: 0;
 }
 
-.podcast-page .episode-content audio {
-  width: 100%;
+.image-credit {
+  font-size: 0.5rem;
+  color: #777;
 }
 
+.podcast-page .episode-content .episode-description {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+}
 
-/* ===============================
-   MOBILE RESPONSIVE
-   =============================== */
+/* Divider */
+.episode-divider {
+  border: none;
+  border-top: 1px solid #e5e5e5;
+  margin: 1.5rem 0;
+}
 
+/* Mobile */
 @media (max-width: 768px) {
-
-  /* Stack episode elements vertically */
-  .podcast-page .episode-row {
-    grid-template-columns: 1fr;   /* single column */
-    align-items: flex-start;
+  .episode-grid {
+    grid-template-columns: 1fr;
   }
 
-  /* Put image on top */
-  .podcast-page .episode-art {
-    justify-self: center;
-    margin-bottom: 0.75rem;
-  }
-
-  .podcast-page .episode-art img {
+  .episode-image {
     width: 100%;
-    max-width: 220px;
     height: auto;
+    max-height: 220px;
+    margin-bottom: 1rem;
   }
-
-  /* Text flows naturally below */
-  .podcast-page .episode-content {
-    width: 100%;
-  }
-
-  .podcast-page .episode-summary {
-    text-align: left;   /* justified text looks bad on mobile */
-  }
-
-  /* Audio spans full width */
-  .podcast-page .episode-content audio {
-    width: 100%;
-  }
-
 }
 
 /* ===============================
@@ -172,209 +144,55 @@ header:
        EPISODES
        =============================== -->
 
-  <section class="podcast-episodes">
+ {% for ep in site.data.podcast.episodes %}
+<section class="episode">
 
-    <!-- Episode 1 -->
-    <div class="episode-row">
-      <div class="episode-art">
-  <a href="https://publicaffairs.photoshelter.com/search/result/I0000yKHsZjlAqbE?terms=data%20center&"
-     target="_blank"
-     rel="noopener noreferrer">
-    <img src="/assets/images/datacenter.jpg">
-  </a>
-</div>
+  <div class="episode-grid">
 
-      <div class="episode-content">
-        <h3>When the Cloud Gets Thirsty: How Data Centers Use Our Water</h3>
-        <div class="episode-meta">
-          Elias Hill & Ian McGuire · CEE 437 · Fall 2025
-        </div>
-        <p class="episode-summary">
-          Data centers power the internet, cloud storage, and AI—but they also consume enormous amounts of water. In this episode, Elias and Ian have a conversation about balancing technological progress with the fundamental need for water.
-        </p>
+    {% if ep.image %}
+<figure class="episode-figure">
+  <img
+    src="{{ ep.image | relative_url }}"
+    alt="{{ ep.title }}"
+    class="episode-image">
 
-        <audio controls data-episode="When the Cloud Gets Thirsty: How Data Centers Use Our Water">
-  <source src="/assets/audio/Ian_Elias.mp3" type="audio/mpeg">
-</audio>
-      </div>
-   </div>
-  <!-- End of Episode 1 -->
+  {% if ep.image_source_url %}
+  <figcaption class="image-credit">
+    Image source:
+    <a href="{{ ep.image_source_url }}"
+       target="_blank"
+       rel="noopener">
+      {{ ep.image_source_name }}
+    </a>
+  </figcaption>
+  {% endif %}
+</figure>
+{% endif %}
 
-    <!-- Episode 2 -->
-    <div class="episode-row">
-      <div class="episode-art">
-       <a href="https://www.britannica.com/story/harmful-algal-blooms"
-     target="_blank"
-     rel="noopener noreferrer">
-        <img src="/assets/images/algae.jpg">
-        </a>
-      </div>
+    <div class="episode-content">
+      <h3 class="episode-title">{{ ep.title }}</h3>
 
-      <div class="episode-content">
-        <h3>When Lakes Turn Green: Harmful Algal Blooms and the Water We Drink</h3>
-        <div class="episode-meta">
-          Saliyah As-Salaam & Aden Weiss · CEE 437 · Fall 2025
-        </div>
-        <p class="episode-summary">
-Harmful algal blooms are becoming more common in lakes and rivers—but what do they actually mean for people and drinking water? In this episode, Saliyah speaks with Aden  about the causes and effects of harmful algal blooms, and the challenge drinking water treatment faces. The conversation also highlights how everyday actions connect to water quality and community health. </p>
+      <p class="episode-meta">
+        {{ ep.authors }}
+      </p>
 
-        <audio controls>
-          <source src="/assets/audio/Aden_Saliyah.mp3" type="audio/mpeg">
-        </audio>
-      </div>
+      <p class="episode-description">
+        {{ ep.description }}
+      </p>
+
+      <audio controls data-episode="{{ ep.title }}">
+        <source src="{{ ep.audio | relative_url }}" type="audio/mpeg">
+      </audio>
+    </div>
+
   </div>
-<!-- End of Episode 2 -->
 
-    <!-- Episode 3 -->
-    <div class="episode-row">
-      <div class="episode-art">
-       <a href="https://www.thecardiologyadvisor.com/features/microplastics-and-cardiovascular-health/"
-     target="_blank"
-     rel="noopener noreferrer">
-        <img src="/assets/images/plastics.jpg">
-        </a>
-      </div>
+</section>
 
-      <div class="episode-content">
-        <h3>The Plastics You Can’t See in Water</h3>
-        <div class="episode-meta">
-          Paul Sas & Abby Jackman · CEE 437 · Fall 2025
-        </div>
-        <p class="episode-summary">
-Microplastics are everywhere—from the water we drink to the food we eat—yet most of them are too small to see. In this episode, Paul speaks with Abby about what microplastics are, how they enter water systems and food webs, and why wastewater treatment plays a critical role in their spread. </p>
-
-        <audio controls>
-          <source src="/assets/audio/Paul_Abby.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-  </div>
-<!-- End of Episode 3 -->
-
-    <!-- Episode 4 -->
-    <div class="episode-row">
-      <div class="episode-art">
-       <a href="https://www.discoverwater.co.uk/treatment-supply"
-     rel="noopener noreferrer">
-        <img src="/assets/images/source.jpg">
-        </a>
-      </div>
-
-      <div class="episode-content">
-        <h3>Water From Source to Tap</h3>
-        <div class="episode-meta">
-          Gursi Nanda & Elisha Zhi EN Foo · CEE 437 · Fall 2025
-        </div>
-        <p class="episode-summary">
-Where does tap water come from, and what happens to it before it reaches your glass? In this episode, Gursi speaks with Elisha about the journey of drinking water—from rivers and aquifers through treatment processes like coagulation, filtration, and disinfection. </p>
-
-        <audio controls>
-          <source src="/assets/audio/Elisha_Gursi.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-  </div>
-<!-- End of Episode 4 -->
-
-    <!-- Episode 5 -->
-    <div class="episode-row">
-      <div class="episode-art">
-       <a href="https://bnwaterkeeper.org/combined-sewer-overflows/"
-     rel="noopener noreferrer">
-        <img src="/assets/images/CSO.jpg">
-        </a>
-      </div>
-
-      <div class="episode-content">
-        <h3>When It Rains, Where Does the Sewage Go? </h3>
-        <div class="episode-meta">
-          Fouad Khalifa & Justin Nalbach · CEE 437 · Fall 2025
-        </div>
-        <p class="episode-summary">
-Why do some cities release wastewater into rivers during heavy rain, and how is that even allowed? In this episode, Justin and Fouad explain combined sewer overflows (CSOs)—why older cities like Philadelphia have them, how they affect rivers and recreation, and what the landmark Green City, Clean Waters initiative is trying to achieve. </p>
-
-        <audio controls>
-          <source src="/assets/audio/Fouad_Justin.m4a" type="audio/mpeg">
-        </audio>
-      </div>
-  </div>
-<!-- End of Episode 5 -->
-
-<!-- Episode 6 -->
-    <div class="episode-row">
-      <div class="episode-art">
-       <a href="https://www.angi.com/articles/why-there-no-cold-water-coming-out-kitchen-faucet.html"
-     target="_blank"
-     rel="noopener noreferrer">
-        <img src="/assets/images/tap.jpg">
-        </a>
-      </div>
-
-      <div class="episode-content">
-        <h3>Why Does My Tap Water Smell Like a Pool?</h3>
-        <div class="episode-meta">
-          Rae Zhu & Jubean Ahn · CEE 437 · Fall 2025
-        </div>
-        <p class="episode-summary">
-Have you ever turned on the tap and noticed a smell that reminds you of a swimming pool? In this episode, Rae and Jubean explore why chlorine is added to drinking water, how it protects us from harmful microbes, and why that faint chlorine smell is actually a sign of safety. </p>
-
-        <audio controls>
-          <source src="/assets/audio/Jubean_Rae.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-  </div>
-<!-- End of Episode 6 -->
-
-   <!-- Episode 7 -->
-    <div class="episode-row">
-      <div class="episode-art">
-       <a href="https://www.livescience.com/54521-tap-water-tastes.html"
-     target="_blank"
-     rel="noopener noreferrer">
-        <img src="/assets/images/watertaste.jpg">
-        </a>
-      </div>
-
-      <div class="episode-content">
-        <h3>The Science Behind Taste and Odor in Drinking Water</h3>
-        <div class="episode-meta">
-          Cruz Hector, Catie Cappellin & Amanda Dobson · CEE 437 · Fall 2025
-        </div>
-        <p class="episode-summary">
-Would you drink water that smells unpleasant, even if it looks clear? In this episode, Hector, Catie, and Amanda	explore why drinking water can sometimes have earthy, musty, chlorinous, or rotten-egg odors, and how microorganisms and their chemical byproducts drive these taste and odor events. </p>
-
-        <audio controls>
-          <source src="/assets/audio/Hector_Catie_Amanda.mp4" type="audio/mpeg">
-        </audio>
-      </div>
-  </div>
-<!-- End of Episode 7 -->
-
-   <!-- Episode 8 -->
-    <div class="episode-row">
-      <div class="episode-art">
-       <a href="https://www.centracare.com/articles-stories/drinking-tap-water-is-better/"
-     target="_blank"
-     rel="noopener noreferrer">
-        <img src="/assets/images/tapwater.jpg">
-        </a>
-      </div>
-
-      <div class="episode-content">
-        <h3>Would You Drink Tap Water? Science, Trust, and What’s Really in Your Glass</h3>
-        <div class="episode-meta">
-          Chen Yang & Ewangga Patrianada · CEE 437 · Fall 2025
-        </div>
-        <p class="episode-summary">
-Is tap water really safe to drink? In this episode, Chen speak with Ewangga about how drinking water is treated in the U.S., why contaminants like PFAS raise concern, and what went wrong during the Flint water crisis. This conversation also explores how science, engineering, and trust shape our everyday relationship with tap water in the global scale. </p>
-
-        <audio controls>
-          <source src="/assets/audio/Chen_Ewangga.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-  </div>
-<!-- End of Episode 8 -->
+<hr class="episode-divider">
+{% endfor %}
 
 
-  </section>
 
   <!-- ===============================
        DISCLAIMER
@@ -386,15 +204,4 @@ Is tap water really safe to drink? In this episode, Chen speak with Ewangga abou
     </strong>
   </p>
 
-<script>
-document.querySelectorAll('audio').forEach(audio => {
-  audio.addEventListener('play', () => {
-    if (typeof gtag === 'function') {
-      gtag('event', 'audio_play', {
-        episode: audio.dataset.episode || 'unknown'
-      });
-    }
-  });
-});
-</script>
 </div>
