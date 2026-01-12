@@ -46,3 +46,51 @@
   duration: "10:12"
   pubdate: "Mon, 12 Jan 2026 13:40:00 -0600"
   authors: "Gursi Nanda & Elisha Zhi EN Foo · CEE 437 · Fall 2025"
+
+- title: "When It Rains, Where Does the Sewage Go?"
+  image: "/assets/images/CSO.jpg"
+  image_source_name: "bnwaterkeeper.org"
+  image_source_url: "https://bnwaterkeeper.org/combined-sewer-overflows/"
+  description: >
+    Why do some cities release wastewater into rivers during heavy rain, and how is that even allowed? In this episode, Justin Nalbach and Fouad Khalifa (CEE 437, Fall 2025, UIUC) explain combined sewer overflows (CSOs)—why older cities like Philadelphia have them, how they affect rivers and recreation, and what the landmark Green City, Clean Waters initiative is trying to achieve.
+  audio: "/assets/audio/Fouad_Justin.m4a"
+  length: "10981010"
+  duration: "16:44"
+  pubdate: "Mon, 12 Jan 2026 13:50:00 -0600"
+  authors: "Fouad Khalifa & Justin Nalbach · CEE 437 · Fall 2025"
+
+- title: "Why Does My Tap Water Smell Like a Pool?"
+  image: "/assets/images/tap.jpg"
+  image_source_name: "www.angi.com"
+  image_source_url: "https://www.angi.com/articles/why-there-no-cold-water-coming-out-kitchen-faucet.html"
+  description: >
+    Have you ever turned on the tap and noticed a smell that reminds you of a swimming pool? In this episode, Rae Zhu and Jubean Ahn (CEE 437, Fall 2025, UIUC) explore why chlorine is added to drinking water, how it protects us from harmful microbes, and why that faint chlorine smell is actually a sign of safety.
+  audio: "/assets/audio/Jubean_Rae.mp3"
+  length: "9349873"
+  duration: "6:29"
+  pubdate: "Mon, 12 Jan 2026 14:00:00 -0600"
+  authors: "Rae Zhu & Jubean Ahn · CEE 437 · Fall 2025"
+
+- title: "The Science Behind Taste and Odor in Drinking Water"
+  image: "/assets/images/watertaste.jpg"
+  image_source_name: "www.livescience.com"
+  image_source_url: "https://www.livescience.com/54521-tap-water-tastes.html"
+  description: >
+    Would you drink water that smells unpleasant, even if it looks clear? In this episode, Cruz Hector, Catie Cappellin and Amanda Dobson (CEE 437, Fall 2025, UIUC)	explore why drinking water can sometimes have earthy, musty, chlorinous, or rotten-egg odors, and how microorganisms and their chemical byproducts drive these taste and odor events.
+  audio: "/assets/audio/Hector_Catie_Amanda.mp4"
+  length: "7634101"
+  duration: "11:00"
+  pubdate: "Mon, 12 Jan 2026 14:10:00 -0600"
+  authors: "Cruz Hector, Catie Cappellin & Amanda Dobson · CEE 437 · Fall 2025"
+
+- title: "Science, Trust, and What’s Really in Your Glass"
+  image: "/assets/images/tapwater.jpg"
+  image_source_name: "www.centracare.com"
+  image_source_url: "https://www.centracare.com/articles-stories/drinking-tap-water-is-better"
+  description: >
+    Is tap water really safe to drink? In this episode, Chen Yang speak with Ewangga Patrianada about how drinking water is treated in the U.S., why contaminants like PFAS raise concern, and what went wrong during the Flint water crisis. This conversation also explores how science, engineering, and trust shape our everyday relationship with tap water in the global scale.
+  audio: "/assets/audio/Chen_Ewangga.mp3"
+  length: "11953550"
+  duration: "8:17"
+  pubdate: "Mon, 12 Jan 2026 14:20:00 -0600"
+  authors: "Chen Yang & Ewangga Patrianada · CEE 437 · Fall 2025"
