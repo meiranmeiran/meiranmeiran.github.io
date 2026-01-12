@@ -1,119 +1,79 @@
 ---
 layout: splash
+title: Faucet and Drain Science
 classes: wide
 author_profile: false
+excerpt: Faucet and Drain Science - Explaining Water, One Drop at a Time
 header:
-  overlay_image: /assets/images/waterleaf.jpg
-  caption: Drops of water gather on the leaf of a Calathea Bella plant. Board of Trustees of the University of Illinois
+  overlay_image: /assets/images/waterdrop.jpg
   show_overlay_excerpt: true
 ---
 
-<link rel="stylesheet" href="/assets/css/w3.css">
-
 <style>
-/* Scoped ONLY to podcast page */
+
+.podcast-page .page__hero--overlay {
+  background-size: 85%;
+  background-position: center center;
+}
+
+/* ===============================
+   PAGE SCOPE
+   =============================== */
+
+.podcast-page {
+  margin-top: 1rem;
+}
+
+/* ===============================
+   PODCAST HEADER
+   =============================== */
 
 .podcast-page .podcast-header {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .podcast-page .podcast-cover {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  max-height: 220px;
   object-fit: cover;
   border-radius: 8px;
-}
-
-.podcast-page .episode-row {
-  display: grid;
-  grid-template-columns: 80px 1fr 60px;
-  gap: 1.5rem;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.podcast-page .episode-art img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.podcast-page .episode-date {
-  font-size: 0.85rem;
-  color: #777;
-}
-
-.podcast-page .episode-title {
-  margin: 0.2rem 0;
-}
-
-.podcast-page .episode-summary {
-  font-size: 0.95rem;
-  line-height: 1.4;
-  color: #555;
-}
-
-.podcast-page .episode-duration {
-  text-align: right;
-  color: #777;
-  font-size: 0.9rem;
-  white-space: nowrap;
-}
-
-.podcast-page audio {
-  width: 100%;
-  margin-top: 0.5rem;
-}
-
-.podcast-page .podcast-disclaimer {
-  font-size: 0.8rem;
-  color: #666;
-  margin-top: 2.5rem;
-  text-align: center;
+  flex-shrink: 0;
 }
 
 .podcast-page h2 {
   font-weight: 700;
   font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
 .podcast-page .podcast-description {
   text-align: justify;
   text-justify: inter-word;
-
-}
-
-.podcast-page .podcast-cover {
-  width: 200px;
-  max-height: 220px;     /* controls height */
-  object-fit: cover;     /* prevents distortion */
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-
-.podcast-page .podcast-header {
-  display: flex;
-  align-items: center;   /* vertical centering */
-  gap: 1.75rem;
+  line-height: 1.6;
   margin-bottom: 0.5rem;
 }
 
-.podcast-page .page__inner-wrap {
-  padding-bottom: 0.5rem;
+/* ===============================
+   EPISODE LIST
+   =============================== */
+
+.podcast-page .podcast-episodes {
+  margin-top: 1.5rem;
 }
 
-/* Episode layout */
+/* Desktop episode layout */
 .podcast-page .episode-row {
   display: grid;
   grid-template-columns: 120px 1fr 70px;
   gap: 1.25rem;
   align-items: flex-start;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
-/* Episode image */
 .podcast-page .episode-art img {
   width: 120px;
   height: 120px;
@@ -121,91 +81,156 @@ header:
   border-radius: 8px;
 }
 
-/* Episode content */
-.podcast-page .episode-content {
-  display: block;
+.podcast-page .episode-content h3 {
+  margin: 0 0 0.25rem 0;
+  font-weight: 600;
 }
 
-/* Justified description */
+.podcast-page .episode-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
 .podcast-page .episode-summary {
   text-align: justify;
   text-justify: inter-word;
+  line-height: 1.5;
   margin-bottom: 0.75rem;
 }
 
-/* Audio player should span content width only */
 .podcast-page .episode-content audio {
   width: 100%;
-  max-width: 100%;
 }
 
-/* Duration alignment */
 .podcast-page .episode-duration {
   white-space: nowrap;
-  color: #777;
   font-size: 0.9rem;
+  color: #666;
+  text-align: right;
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+   =============================== */
+
+@media (max-width: 768px) {
+
+  .podcast-page .podcast-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .podcast-page .podcast-cover {
+    width: 100%;
+    max-width: 220px;
+    max-height: none;
+  }
+
+  .podcast-page .podcast-description {
+    text-align: left;
+  }
+
+  .podcast-page .episode-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .podcast-page .episode-art img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .podcast-page .episode-duration {
+    text-align: left;
+    font-size: 0.85rem;
+  }
+
+  .podcast-page .episode-summary {
+    text-align: left;
+  }
+}
+
+/* ===============================
+   DISCLAIMER
+   =============================== */
+
+.podcast-page .podcast-disclaimer {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 3rem;
+  text-align: center;
 }
 </style>
 
-<body>
 <div class="container podcast-page">
 
-  <header class="podcast-header">
-    <img src="/assets/images/waterdrop.jpg"
-         alt="Podcast cover"
-         class="podcast-cover">
+  <!-- ===============================
+       PODCAST INTRO
+       =============================== -->
 
+  <header class="podcast-header">
     <div class="podcast-meta">
-      <h2>Faucet and Drain Science: Explaining Water, One Drop at a Time</h2>
       <p class="podcast-description">
-      Water is vital to human society and the planet, yet the science and engineering
-behind safe and reliable water systems often remain invisible to the public. This podcast consists of short, interview-style episodes produced by students in CEE 437 and CEE 538 who translate water quality science and engineering concepts into accessible conversations about everyday water issues. The project also helps students practice community-facing science communication skills that are valuable for their future careers.
+        Water is vital to human society and the planet, yet the science and engineering behind
+        safe and reliable water systems often remain invisible to the public. This podcast
+        consists of short, interview-style episodes produced by students in CEE 437 and
+        CEE 538, translating water quality science and engineering into accessible conversations
+        about everyday water issues. The project also helps students practice
+        <strong>community-facing science communication skills</strong> that are valuable for
+        their future careers.
       </p>
     </div>
   </header>
 
-  <hr>
+  <!-- ===============================
+       EPISODES
+       =============================== -->
 
   <section class="podcast-episodes">
 
     <!-- Episode 1 -->
-<div class="episode-row">
-  <div class="episode-art">
-    <img src="/assets/images/datacenter.jpg" alt="Data center servers">
-  </div>
+    <div class="episode-row">
+      <div class="episode-art">
+        <img src="/assets/images/datacenter.jpg"
+             alt="Data center servers and cooling infrastructure">
+      </div>
 
-  <div class="episode-content">
-    <h3>When the Cloud Gets Thirsty: How Data Centers Use Our Water</h3>
-    <div class="episode-meta">Elias Hill & Ian McGuire, CEE 437, Fall 2025</div>
-    <p class="episode-summary">
-      Data centers power the internet, cloud storage, and AI—but they also consume enormous
-      amounts of water. In this episode, Elias and Ian explore why data centers need water
-      for cooling, how their growth affects water scarcity and pollution, and what emerging
-      technologies could mean for the future of water resources.
-    </p>
+      <div class="episode-content">
+        <h3>When the Cloud Gets Thirsty: How Data Centers Use Our Water</h3>
+        <div class="episode-meta">
+          Elias Hill & Ian McGuire · CEE 437 · Fall 2025
+        </div>
+        <p class="episode-summary">
+          Data centers power the internet, cloud storage, and AI—but they also consume enormous
+          amounts of water. In this episode, Elias and Ian have a conversation
+          about balancing technological progress with the fundamental need for water.
+        </p>
 
-    <audio controls>
-      <source src="/assets/audio/Ian_Elias.mp3" type="audio/mpeg">
-    </audio>
-  </div>
+        <audio controls>
+          <source src="/assets/audio/Ian_Elias.mp3" type="audio/mpeg">
+        </audio>
+      </div>
 
-  <div class="episode-duration">9:26 min</div>
-</div>
-
-
+      <div class="episode-duration">
+        9:26 min
+      </div>
+    </div>
 
   </section>
 
+  <!-- ===============================
+       DISCLAIMER
+       =============================== -->
 
-
-<p class="podcast-disclaimer">
-  <strong>
-    Episodes are produced by students as part of a course project and do not
-    necessarily represent the views of the instructor or the University of Illinois.
-  </strong>
-</p>
-
+  <p class="podcast-disclaimer">
+    <strong>
+      Episodes are produced by students as part of a course assignment and do not necessarily
+      represent the views of the instructor or the University of Illinois.
+    </strong>
+  </p>
 
 </div>
-</body>
-
