@@ -194,9 +194,9 @@ header:
           Data centers power the internet, cloud storage, and AI—but they also consume enormous amounts of water. In this episode, Elias and Ian have a conversation about balancing technological progress with the fundamental need for water.
         </p>
 
-        <audio controls>
-          <source src="/assets/audio/Ian_Elias.mp3" type="audio/mpeg">
-        </audio>
+        <audio controls data-episode="When the Cloud Gets Thirsty: How Data Centers Use Our Water">
+  <source src="/assets/audio/Ian_Elias.mp3" type="audio/mpeg">
+</audio>
       </div>
    </div>
   <!-- End of Episode 1 -->
@@ -387,4 +387,15 @@ Is tap water really safe to drink? In this episode, Chen speak with Ewangga abou
     </strong>
   </p>
 
+<script>
+document.querySelectorAll('audio').forEach(audio => {
+  audio.addEventListener('play', () => {
+    if (typeof gtag === 'function') {
+      gtag('event', 'audio_play', {
+        episode: audio.dataset.episode || 'unknown'
+      });
+    }
+  });
+});
+</script>
 </div>
