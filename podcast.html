@@ -109,49 +109,37 @@ header:
 
 @media (max-width: 768px) {
 
-  .podcast-page .podcast-description {
-    text-align: justify;
-    text-justify: inter-word;
+  /* Stack episode elements vertically */
+  .podcast-page .episode-row {
+    grid-template-columns: 1fr;   /* single column */
+    align-items: flex-start;
   }
 
-/* Episode grid */
-.podcast-page .episode-row {
-  display: grid;
-  grid-template-columns: 160px 1fr;
-  gap: 1.5rem;
-  align-items: center;
+  /* Put image on top */
+  .podcast-page .episode-art {
+    justify-self: center;
+    margin-bottom: 0.75rem;
+  }
 
-  border-bottom: 1px solid #e5e5e5; /* separator */
-  padding-bottom: 1.25rem;
-  margin-bottom: 1.25rem;
-}
+  .podcast-page .episode-art img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+  }
 
-.podcast-page .episode-row:first-child {
-  border-top: 1px solid #e5e5e5;
-  padding-top: 1.25rem;
-}
+  /* Text flows naturally below */
+  .podcast-page .episode-content {
+    width: 100%;
+  }
 
-.podcast-page .episode-row:last-child {
-  border-bottom: 1px solid #e5e5e5;
-  margin-bottom: 0;
-}
+  .podcast-page .episode-summary {
+    text-align: left;   /* justified text looks bad on mobile */
+  }
 
-/* Let summary + audio span across duration column */
-.podcast-page .episode-body {
-  grid-column: 2 / -1; /* spans from text column to right edge */
-}
-
-/* Ensure summary is not width-limited */
-.podcast-page .episode-summary {
-  text-align: justify;
-  text-justify: inter-word;
-  max-width: none;
-}
-
-/* Audio should also fill full width */
-.podcast-page .episode-body audio {
-  width: 100%;
-}
+  /* Audio spans full width */
+  .podcast-page .episode-content audio {
+    width: 100%;
+  }
 
 }
 
@@ -264,6 +252,32 @@ Is tap water really safe to drink? In this episode, Chen speak with Ewangga abou
       </div>
   </div>
 <!-- End of Episode 3 -->
+
+    <!-- Episode 4 -->
+    <div class="episode-row">
+      <div class="episode-art">
+       <a href="https://www.centracare.com/articles-stories/drinking-tap-water-is-better/"
+     target="_blank"
+     rel="noopener noreferrer">
+        <img src="/assets/images/tapwater.jpg">
+        </a>
+      </div>
+
+      <div class="episode-content">
+        <h3>Why Does My Tap Water Smell Like a Pool?</h3>
+        <div class="episode-meta">
+          Rae Zhu & Jubean Ahn · CEE 437 · Fall 2025
+        </div>
+        <p class="episode-summary">
+Is tap water really safe to drink? In this episode, Chen speak with Ewangga about how drinking water is treated in the U.S., why contaminants like PFAS raise concern, and what went wrong during the Flint water crisis. This conversation also explores how science, engineering, and trust shape our everyday relationship with tap water in the global scale. </p>
+
+        <audio controls>
+          <source src="/assets/audio/Chen_Ewangga.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+  </div>
+<!-- End of Episode 4 -->
+
 
   </section>
 
