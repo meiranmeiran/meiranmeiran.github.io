@@ -18,6 +18,9 @@ layout: null
     <itunes:image href="https://meiranmeiran.github.io/assets/images/waterdrop.jpg"/>
     <itunes:explicit>false</itunes:explicit>
     <itunes:type>episodic</itunes:type>
+    <itunes:category text="Science">
+    <itunes:category text="Nature"/>
+    </itunes:category>
 
     {% for ep in site.data.podcast.episodes %}
     <item>
