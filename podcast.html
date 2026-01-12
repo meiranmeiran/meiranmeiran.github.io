@@ -53,16 +53,28 @@ header:
 /* Desktop episode layout */
 .podcast-page .episode-row {
   display: grid;
-  grid-template-columns: 120px 1fr 70px;
-  gap: 1.25rem;
-  align-items: flex-start;
-  padding: 1.25rem 0;
+  grid-template-columns: 160px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+
   border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.podcast-page .episode-row:first-child {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 1.25rem;
+}
+
+.podcast-page .episode-row:last-child {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0;
 }
 
 .podcast-page .episode-art img {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -90,12 +102,6 @@ header:
   width: 100%;
 }
 
-.podcast-page .episode-duration {
-  white-space: nowrap;
-  font-size: 0.9rem;
-  color: #666;
-  text-align: right;
-}
 
 /* ===============================
    MOBILE RESPONSIVE
@@ -111,9 +117,23 @@ header:
 /* Episode grid */
 .podcast-page .episode-row {
   display: grid;
-  grid-template-columns: 120px 1fr auto;
-  gap: 1.25rem;
-  align-items: flex-start;
+  grid-template-columns: 160px 1fr;
+  gap: 1.5rem;
+  align-items: center;
+
+  border-bottom: 1px solid #e5e5e5; /* separator */
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.podcast-page .episode-row:first-child {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 1.25rem;
+}
+
+.podcast-page .episode-row:last-child {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 0;
 }
 
 /* Let summary + audio span across duration column */
@@ -169,10 +189,15 @@ header:
 
     <!-- Episode 1 -->
     <div class="episode-row">
+
+
       <div class="episode-art">
-        <img src="/assets/images/datacenter.jpg"
-             alt="Data center servers and cooling infrastructure">
-      </div>
+  <a href="https://publicaffairs.photoshelter.com/search/result/I0000yKHsZjlAqbE?terms=data%20center&"
+     target="_blank"
+     rel="noopener noreferrer">
+    <img src="/assets/images/datacenter.jpg">
+  </a>
+</div>
 
       <div class="episode-content">
         <h3>When the Cloud Gets Thirsty: How Data Centers Use Our Water</h3>
@@ -180,49 +205,65 @@ header:
           Elias Hill & Ian McGuire · CEE 437 · Fall 2025
         </div>
         <p class="episode-summary">
-          Data centers power the internet, cloud storage, and AI—but they also consume enormous
-          amounts of water. In this episode, Elias and Ian have a conversation
-          about balancing technological progress with the fundamental need for water.
+          Data centers power the internet, cloud storage, and AI—but they also consume enormous amounts of water. In this episode, Elias and Ian have a conversation about balancing technological progress with the fundamental need for water.
         </p>
 
         <audio controls>
           <source src="/assets/audio/Ian_Elias.mp3" type="audio/mpeg">
         </audio>
       </div>
+   </div>
+  <!-- End of Episode 1 -->
 
-      <div class="episode-duration">
-        9:26 min
-      </div>
-    </div>
-
-    <!-- Episode 1 -->
+    <!-- Episode 2 -->
     <div class="episode-row">
       <div class="episode-art">
-        <img src="/assets/images/datacenter.jpg"
-             alt="Data center servers and cooling infrastructure">
+       <a href="https://www.britannica.com/story/harmful-algal-blooms"
+     target="_blank"
+     rel="noopener noreferrer">
+        <img src="/assets/images/algae.jpg">
+        </a>
       </div>
 
       <div class="episode-content">
-        <h3>When the Cloud Gets Thirsty: How Data Centers Use Our Water</h3>
+        <h3>When Lakes Turn Green: Harmful Algal Blooms and the Water We Drink</h3>
         <div class="episode-meta">
-          Elias Hill & Ian McGuire · CEE 437 · Fall 2025
+          Saliyah As-Salaam & Aden Weiss · CEE 437 · Fall 2025
         </div>
         <p class="episode-summary">
-          Data centers power the internet, cloud storage, and AI—but they also consume enormous
-          amounts of water. In this episode, Elias and Ian have a conversation
-          about balancing technological progress with the fundamental need for water.
-        </p>
+Harmful algal blooms are becoming more common in lakes and rivers—but what do they actually mean for people and drinking water? In this episode, Saliyah speaks with Aden  about the causes and effects of harmful algal blooms, and the challenge drinking water treatment faces. The conversation also highlights how everyday actions connect to water quality and community health. </p>
 
         <audio controls>
-          <source src="/assets/audio/Ian_Elias.mp3" type="audio/mpeg">
+          <source src="/assets/audio/Aden_Saliyah.mp3" type="audio/mpeg">
         </audio>
       </div>
+  </div>
+<!-- End of Episode 2 -->
 
-      <div class="episode-duration">
-        9:26 min
+    <!-- Episode 3 -->
+    <div class="episode-row">
+      <div class="episode-art">
+       <a href="https://www.centracare.com/articles-stories/drinking-tap-water-is-better/"
+     target="_blank"
+     rel="noopener noreferrer">
+        <img src="/assets/images/tapwater.jpg">
+        </a>
       </div>
-    </div>
 
+      <div class="episode-content">
+        <h3>Would You Drink Tap Water? Science, Trust, and What’s Really in Your Glass</h3>
+        <div class="episode-meta">
+          Chen Yang & Ewangga Patrianada · CEE 437 · Fall 2025
+        </div>
+        <p class="episode-summary">
+Is tap water really safe to drink? In this episode, Chen speak with Ewangga about how drinking water is treated in the U.S., why contaminants like PFAS raise concern, and what went wrong during the Flint water crisis. This conversation also explores how science, engineering, and trust shape our everyday relationship with tap water in the global scale. </p>
+
+        <audio controls>
+          <source src="/assets/audio/Chen_Ewangga.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+  </div>
+<!-- End of Episode 3 -->
 
   </section>
 
