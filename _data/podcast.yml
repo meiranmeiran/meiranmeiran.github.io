@@ -1,3 +1,15 @@
+- title: "Down the Drain and Through the Ages: A Brief History of Wastewater Treatment"
+  image: "/assets/images/Faraday.png"
+  image_source_name: "Wikipedia"
+  image_source_url: "https://en.wikipedia.org/wiki/Michael_Faraday"
+  description: >
+   The history of men is reflected in the history of sewers. In this episode, Juliana and Inas trace the history of sanitation from early civilizations and Roman sewers to the public health breakthroughs of the 19th century and the development of modern treatment technologies, highlighting how managing wastewater has shaped human health and urban life.
+  audio: "/assets/audio/Juliana_Inas.mp3"
+  length: "18730131"
+  duration: "13:00"
+  pubdate: "Wed, 29 Apr 2026 19:10:00 -0600"
+  authors: "Juliana Marks & Inas Belkadi · CEE 538 · Spring 2026"
+
 - title: "Chlorine vs. UV: Why Wastewater Treatment Is Making the Switch · Episode 1"
   image: "/assets/images/UV.png"
   image_source_name: "Water and Wastewater"
@@ -7,7 +19,7 @@
   audio: "/assets/audio/Aden_Laurene.mp3"
   length: "12310278"
   duration: "08:33"
-  pubdate: "Wed, 29 Apr 2026 18:10:00 -0600"
+  pubdate: "Wed, 29 Apr 2026 18:13:00 -0600"
   authors: "Aden Weiss & Laurene Shelton · CEE 538 · Spring 2026"
 
 - title: "Chlorine vs. UV: Why Wastewater Treatment Is Making the Switch · Episode 2"
@@ -21,6 +33,30 @@
   duration: "12:09"
   pubdate: "Wed, 29 Apr 2026 18:10:00 -0600"
   authors: "Kassandra Estrella & Amanda Dobson · CEE 538 · Spring 2026"
+
+- title: "Flush to Power: Turning Wastewater into Renewable Energy · Episode 1"
+  image: "/assets/images/AD.png"
+  image_source_name: "Wikipedia"
+  image_source_url: "https://en.wikipedia.org/wiki/Anaerobic_digestion"
+  description: >
+    Wastewater contains more than waste—it holds recoverable energy. In this episode, Yuan and Xueming explore how microorganisms break down organic matter to produce methane through anaerobic digestion, and how treatment plants capture this energy to generate heat, electricity, and renewable natural gas. From everyday flushing to energy-positive facilities, this conversation highlights how wastewater treatment is becoming a key part of sustainable energy systems.
+  audio: "/assets/audio/Yuan_Xueming.mp3"
+  length: "10384322"
+  duration: "07:13"
+  pubdate: "Wed, 29 Apr 2026 17:50:00 -0600"
+  authors: "Yuan Fang & Xueming Xu · CEE 538 · Spring 2026"
+
+- title: "Flush to Power: Turning Wastewater into Renewable Energy · Episode 2"
+  image: "/assets/images/AD.png"
+  image_source_name: "Wikipedia"
+  image_source_url: "https://en.wikipedia.org/wiki/Anaerobic_digestion"
+  description: >
+    Wastewater contains more than waste—it holds recoverable energy. In this episode, Thando and Vignesh explore how microorganisms break down organic matter to produce methane through anaerobic digestion, and how treatment plants capture this energy to generate heat, electricity, and renewable natural gas. From everyday flushing to energy-positive facilities, this conversation highlights how wastewater treatment is becoming a key part of sustainable energy systems.
+  audio: "/assets/audio/Thando_Vignesh.mp3"
+  length: "8494101"
+  duration: "05:54"
+  pubdate: "Wed, 29 Apr 2026 17:40:00 -0600"
+  authors: "Thando Mawasha & Vignesh Vinayagam · CEE 538 · Spring 2026"
 
 - title: "PFAS in Drinking Water: The Invisible 'Forever Chemicals' · Episode 1"
   image: "/assets/images/pfas.jpg"
