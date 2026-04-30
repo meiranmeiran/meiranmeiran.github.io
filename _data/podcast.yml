@@ -1,9 +1,9 @@
 - title: "Chlorine vs. UV: Why Wastewater Treatment Is Making the Switch"
-  image: "/assets/images/algae.jpg"
-  image_source_name: "Encyclopaedia Britannica"
-  image_source_url: "https://www.britannica.com/story/harmful-algal-blooms"
+  image: "/assets/images/UV.png"
+  image_source_name: "Water and Wastewater"
+  image_source_url: "https://www.waterandwastewater.com/disinfection-in-wastewater-treatment-modern-techniques-and-practices/"
   description: >
-    Wastewater must be disinfected before it returns to the environment—but how we do that is changing. In this episode, Kacey Estrella and Amanda Dobson (CEE 538, Spring 2026) explore why many treatment plants are moving away from chlorine and toward UV systems, comparing how each method works, their tradeoffs, and what this shift means for public health and aquatic ecosystems.
+    Wastewater must be disinfected before it returns to the environment—but how we do that is changing. In this episode, Kacey Estrella and Amanda Dobson explore why many treatment plants are moving away from chlorine and toward UV systems, comparing how each method works, their tradeoffs, and what this shift means for public health and aquatic ecosystems.
   audio: "/assets/audio/Estrella_Dobson.mp4"
   length: "67283745"
   duration: "12:09"
@@ -14,15 +14,24 @@
 
 
 
-
-
+- title: "PFAS in Drinking Water: The Invisible 'Forever Chemicals'"
+  image: "/assets/images/pfas.jpg"
+  image_source_name: "Texas Water Resources Institute"
+  image_source_url: "https://twri.tamu.edu/blog/what-are-pfas/"
+  description: >
+    PFAS are persistent “forever chemicals” that can enter drinking water through industrial discharge, consumer products, and firefighting foams. In this episode, Xiangyi and Chen explain what PFAS are, why they are difficult to remove, how they affect public health, and what current treatment technologies can—and cannot—do to address them.
+  audio: "/assets/audio/Chen_Xiangyi.mp4"
+  length: "19158330"
+  duration: "13:18"
+  pubdate: "Wed, 29 Apr 2026 17:00:00 -0600"
+  authors: "Xiangyi Huang & Chen Yang · CEE 538 · Spring 2026"
 
 - title: "When Lakes Turn Green: Harmful Algal Blooms and the Water We Drink"
   image: "/assets/images/algae.jpg"
   image_source_name: "Encyclopaedia Britannica"
   image_source_url: "https://www.britannica.com/story/harmful-algal-blooms"
   description: >
-    Harmful algal blooms are becoming more common in lakes and rivers. In this episode, Saliyah As-Salaam and Aden Weiss (CEE 437, Fall 2025) explores what they mean for drinking water, public health, and water treatment.
+    Harmful algal blooms are becoming more common in lakes and rivers. In this episode, Saliyah As-Salaam and Aden Weiss explores what they mean for drinking water, public health, and water treatment.
   audio: "/assets/audio/Aden_Saliyah.mp3"
   length: "12310278"
   duration: "08:33"
@@ -34,8 +43,7 @@
   image_source_name: "Jason Lindsey"
   image_source_url: "https://publicaffairs.photoshelter.com"
   description: >
-    Data centers power the internet and AI—but they also consume enormous amounts
-    of water. In this episode, Elias Hill and Ian McGuire (CEE 437, Fall 2025, UIUC) discuss how technological progress intersects with water sustainability.
+    Data centers power the internet and AI—but they also consume enormous amounts of water. In this episode, Elias Hill and Ian McGuire discuss how technological progress intersects with water sustainability.
   audio: "/assets/audio/Ian_Elias.mp3"
   length: "13594248"
   duration: "09:26"
@@ -47,7 +55,7 @@
   image_source_name: "www.thecardiologyadvisor.com"
   image_source_url: "https://www.thecardiologyadvisor.com/features/microplastics-and-cardiovascular-health/"
   description: >
-    Microplastics are everywhere—from the water we drink to the food we eat—yet most of them are too small to see. In this episode, Paul Sas speaks with Abby Jackman (CEE 437, Fall 2025) about what microplastics are, how they enter water systems and food webs, and why wastewater treatment plays a critical role in their spread.
+    Microplastics are everywhere—from the water we drink to the food we eat—yet most of them are too small to see. In this episode, Paul Sas speaks with Abby Jackman about what microplastics are, how they enter water systems and food webs, and why wastewater treatment plays a critical role in their spread.
   audio: "/assets/audio/Paul_Abby.mp3"
   length: "19836051"
   duration: "13:46"
@@ -59,7 +67,7 @@
   image_source_name: "www.discoverwater.co.uk"
   image_source_url: "https://www.discoverwater.co.uk/treatment-supply"
   description: >
-    Where does tap water come from, and what happens to it before it reaches your glass? In this episode, Gursi Nanda speaks with Elisha Zhi EN Foo (CEE 437, Fall 2025) about the journey of drinking water—from rivers and aquifers through treatment processes like coagulation, filtration, and disinfection.
+    Where does tap water come from, and what happens to it before it reaches your glass? In this episode, Gursi Nanda speaks with Elisha Zhi EN Foo about the journey of drinking water—from rivers and aquifers through treatment processes like coagulation, filtration, and disinfection.
   audio: "/assets/audio/Elisha_Gursi.mp3"
   length: "14700168"
   duration: "10:12"
@@ -71,7 +79,7 @@
   image_source_name: "bnwaterkeeper.org"
   image_source_url: "https://bnwaterkeeper.org/combined-sewer-overflows/"
   description: >
-    Why do some cities release wastewater into rivers during heavy rain, and how is that even allowed? In this episode, Justin Nalbach and Fouad Khalifa (CEE 437, Fall 2025) explain combined sewer overflows (CSOs)—why older cities like Philadelphia have them, how they affect rivers and recreation, and what the landmark Green City, Clean Waters initiative is trying to achieve.
+    Why do some cities release wastewater into rivers during heavy rain, and how is that even allowed? In this episode, Justin Nalbach and Fouad Khalifa explain combined sewer overflows (CSOs)—why older cities like Philadelphia have them, how they affect rivers and recreation, and what the landmark Green City, Clean Waters initiative is trying to achieve.
   audio: "/assets/audio/Fouad_Justin.m4a"
   length: "10981010"
   duration: "16:44"
@@ -83,7 +91,7 @@
   image_source_name: "www.angi.com"
   image_source_url: "https://www.angi.com/articles/why-there-no-cold-water-coming-out-kitchen-faucet.html"
   description: >
-    Have you ever turned on the tap and noticed a smell that reminds you of a swimming pool? In this episode, Rae Zhu and Jubean Ahn (CEE 437, Fall 2025) explore why chlorine is added to drinking water, how it protects us from harmful microbes, and why that faint chlorine smell is actually a sign of safety.
+    Have you ever turned on the tap and noticed a smell that reminds you of a swimming pool? In this episode, Rae Zhu and Jubean Ahn explore why chlorine is added to drinking water, how it protects us from harmful microbes, and why that faint chlorine smell is actually a sign of safety.
   audio: "/assets/audio/Jubean_Rae.mp3"
   length: "9349873"
   duration: "6:29"
@@ -95,7 +103,7 @@
   image_source_name: "www.livescience.com"
   image_source_url: "https://www.livescience.com/54521-tap-water-tastes.html"
   description: >
-    Would you drink water that smells unpleasant, even if it looks clear? In this episode, Cruz Hector, Catie Cappellin and Amanda Dobson (CEE 437, Fall 2025)	explore why drinking water can sometimes have earthy, musty, chlorinous, or rotten-egg odors, and how microorganisms and their chemical byproducts drive these taste and odor events.
+    Would you drink water that smells unpleasant, even if it looks clear? In this episode, Cruz Hector, Catie Cappellin and Amanda Dobson explore why drinking water can sometimes have earthy, musty, chlorinous, or rotten-egg odors, and how microorganisms and their chemical byproducts drive these taste and odor events.
   audio: "/assets/audio/Hector_Catie_Amanda.mp4"
   length: "7634101"
   duration: "11:00"
@@ -107,7 +115,7 @@
   image_source_name: "www.centracare.com"
   image_source_url: "https://www.centracare.com/articles-stories/drinking-tap-water-is-better"
   description: >
-    Is tap water really safe to drink? In this episode, Chen Yang speak with Ewangga Patrianada (CEE 437, Fall 2025) about how drinking water is treated in the U.S., why contaminants like PFAS raise concern, and what went wrong during the Flint water crisis. This conversation also explores how science, engineering, and trust shape our everyday relationship with tap water in the global scale.
+    Is tap water really safe to drink? In this episode, Chen Yang speak with Ewangga Patrianada about how drinking water is treated in the U.S., why contaminants like PFAS raise concern, and what went wrong during the Flint water crisis. This conversation also explores how science, engineering, and trust shape our everyday relationship with tap water in the global scale.
   audio: "/assets/audio/Chen_Ewangga.mp3"
   length: "11953550"
   duration: "8:17"
